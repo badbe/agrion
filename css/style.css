@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+header {
+  min-height: 39px;
+  background-color: #dbdbdb;
+  width: 100%;
+}
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  max-width: 880px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 39px;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.top-container {
+  max-width: 1167px;
+  margin: 0 auto;
+}
