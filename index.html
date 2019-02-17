@@ -9,6 +9,10 @@
 </head>
 <body>
     <header>
+        <div class="mobile-menu">
+            <p>Меню</p>
+            <div class="icon-menu"><span class="icon-span"></span></div>
+        </div>
         <ul class="nav">
             <li><a href="#">Регистрация вашего бизнеса</a></li>
             <li><a href="#">Бухгалтерия — это ….</a></li>
@@ -20,12 +24,12 @@
     <section class="top">
         <div class="top-container">
             <div class="top-block-first">
-                <div class="block-first-items"><img src="img/logo_top.png" alt=""></div>
-                <div class="block-first-items">
+                <div class="block-first-items logo-header"><img src="img/logo_top.png" alt=""></div>
+                <div class="block-first-items search-form">
                     <input type="text" placeholder="Начните вводить текст поиска...">
                     <p><b>Например:</b> регистрация предприятия</p>
                 </div>
-                <div class="block-first-items">
+                <div class="block-first-items phone">
                     <p id="tel">+7 <span>(918)</span> 192 48 49</p>
                     <button>ЗАКАЗАТЬ ЗВОНОК</button>
                 </div>
@@ -196,5 +200,18 @@
         </div>
     </section>
     <footer class="footer">© Copyright 2016. All Rights Reserved by Webriti</footer>
+    <script>
+    var icon = document.querySelector('.icon-span');
+    var menuList = document.querySelector('.nav');
+
+    icon.addEventListener('click', function () {
+    // Инструкции
+    menuList.style.display = 'block';
+    });
+    var close = document.querySelector('.top');
+    close.onclick = function() {
+        menuList.style.display = 'none';
+    }
+    </script>
 </body>
 </html>
