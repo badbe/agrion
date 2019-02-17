@@ -211,6 +211,7 @@ header {
 .cert-items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .reviews {
     padding-top: 61px;
@@ -451,6 +452,9 @@ header {
     .advantages-grid {
         grid-template-columns: repeat(3, 1/3fr);
     }
+    .btmenu-container {
+        padding: 0 5%;
+    }
 }
 @media (max-width: 960px) {
     header {
@@ -502,9 +506,51 @@ header {
         display: none;
         border-top: 1px solid #000;
     }
+    .cert-items {
+        padding: 0 5%;
+    }
+    .cert-img:nth-of-type(3) {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .reviews-block {
+        img {
+            display: none;
+        }
+        &:nth-of-type(1) {
+            margin-bottom: 25px !important;
+        }
+    }
+    .reviews-blocks {
+        padding: 0 5%;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+    .btmenu-blocks:nth-of-type(1) {
+        display: none;
+    }
+    .btmenu-blocks-items {
+        grid-template-columns: repeat(2, auto);
+    }
 }
-@media (max-width: 580px) {
+@media (max-width: 730px) {
+    .cert-img {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .reviews-block {
+    }
+}
+@media (max-width: 590px) {
     .advantages-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .btmenu-blocks-items {
+        grid-template-columns: auto;
+    }
+    .btmenu-container {
+        justify-content: center;
     }
 }
