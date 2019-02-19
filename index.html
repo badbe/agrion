@@ -11,7 +11,6 @@
     <header>
         <div class="mobile-menu">
             <p>Меню</p>
-            <div class="icon-menu"><span class="icon-span"></span></div>
         </div>
         <ul class="nav">
             <li><a href="#">Регистрация вашего бизнеса</a></li>
@@ -201,17 +200,12 @@
     </section>
     <footer class="footer">© Copyright 2016. All Rights Reserved by Webriti</footer>
     <script>
-    var icon = document.querySelector('.icon-span');
+    var icon = document.querySelector('.mobile-menu');
     var menuList = document.querySelector('.nav');
-
-    icon.addEventListener('click', function () {
-    // Инструкции
-    menuList.style.display = 'block';
+    
+    icon.addEventListener('click', function(){
+        menuList.classList.toggle('mobile-nav');
     });
-    var close = document.querySelector('.top');
-    close.onclick = function() {
-        menuList.style.display = 'none';
-    }
     </script>
 </body>
 </html>
